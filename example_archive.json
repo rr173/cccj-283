@@ -1,0 +1,84 @@
+{
+  "format": "citation-archive/1",
+  "editions": [
+    {
+      "id": "v1",
+      "pages": [
+        {"id": "p1", "length": 100},
+        {"id": "p2", "length": 50}
+      ]
+    },
+    {
+      "id": "v2",
+      "pages": [
+        {"id": "a", "length": 200},
+        {"id": "b", "length": 300}
+      ]
+    },
+    {
+      "id": "v3",
+      "pages": [
+        {"id": "f", "length": 500}
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "from_edition": "v1",
+      "to_edition": "v2",
+      "mappings": [
+        {
+          "id": "m1",
+          "from_page": "p1",
+          "from_start": 0,
+          "from_end": 40,
+          "to_page": "a",
+          "to_start": 100,
+          "to_end": 140
+        },
+        {
+          "id": "m2",
+          "from_page": "p1",
+          "from_start": 30,
+          "from_end": 70,
+          "to_page": "b",
+          "to_start": 200,
+          "to_end": 240
+        },
+        {
+          "id": "m3",
+          "from_page": "p1",
+          "from_start": 70,
+          "from_end": 100,
+          "to_page": "a",
+          "to_start": 140,
+          "to_end": 170
+        }
+      ]
+    },
+    {
+      "from_edition": "v2",
+      "to_edition": "v3",
+      "mappings": [
+        {
+          "id": "m4",
+          "from_page": "a",
+          "from_start": 100,
+          "from_end": 170,
+          "to_page": "f",
+          "to_start": 0,
+          "to_end": 70
+        },
+        {
+          "id": "m5",
+          "from_page": "b",
+          "from_start": 200,
+          "from_end": 240,
+          "to_page": "f",
+          "to_start": 100,
+          "to_end": 140
+        }
+      ]
+    }
+  ]
+}
